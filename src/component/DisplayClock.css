@@ -1,0 +1,61 @@
+.clock-before{
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 
+    0px -10px 25px rgba(255, 255, 255, 0.171),
+    0px 10px 25px rgba(0, 0, 0, 0.445);
+    transition: all 1s;
+}
+.clock{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    color: white;
+    background: linear-gradient(#34373D,#15171a);
+}
+.time{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time > h1{
+    font-size: 50px;
+}
+.time > h1:nth-child(3){
+    color: crimson;
+}
+.colon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 25px;
+    margin: 0 5px;
+}
+.colon > div{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 
+    0px 1px 2px rgba(255, 255, 255, 0.5);
+}
+.date{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25%;
+}
+.day{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70%;
+    color: crimson;
+}
